@@ -1,0 +1,41 @@
+/* Ember & Oak — Rush Hour Kitchen: the page around the canvas. The game itself is
+   drawn on the canvas; this only centres it on a warm bistro wall. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2e2118;
+  color: #fff7e8;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage {
+  width: min(1280px, 100vw);
+  padding: 12px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  background: #c98f5f;
+  cursor: pointer;
+}
+
+.caption {
+  margin: 10px 4px 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 247, 232, 0.75);
+  text-align: center;
+}
